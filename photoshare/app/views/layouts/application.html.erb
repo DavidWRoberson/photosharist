@@ -34,6 +34,17 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+
+
+<div class="container">
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: [:alert, alert_for(name)] %>
+  <% end %>
+  <%= yield %>
+</div>
+
 <style>
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
