@@ -7,3 +7,5 @@ def alert_for(flash_type)
 	  notice: 'alert-info'	
 	}[flash_type.to_sym] || flash_type.to_s
 end
+
+end
